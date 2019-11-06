@@ -20,6 +20,7 @@ const text = (() => {
 
     for(let i=0; i<items.children.length; i++){
       items.children[i].children[0].addEventListener('change',finish);
+      items.children[i].children[2].addEventListener('click', deleteItem);
     }
   }
 
@@ -54,6 +55,8 @@ const text = (() => {
 
   // event handler til að eyða færslu
   function deleteItem(e) {
+    const {target} =e;
+    target.parentNode.remove();
   }
 
   // hjálparfall til að útbúa element
