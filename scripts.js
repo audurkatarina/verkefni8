@@ -55,8 +55,8 @@ const text = (() => {
 
   // event handler til að eyða færslu
   function deleteItem(e) {
-    const {target} =e;
-    target.parentNode.remove();
+    const { target } = e;
+    target.parentElement.remove();
   }
 
   // hjálparfall til að útbúa element
