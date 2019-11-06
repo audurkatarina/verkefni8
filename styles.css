@@ -62,6 +62,10 @@ main {
   text-decoration: line-through;
 }
 
+.item--done.off{
+  text-decoration: none;
+}
+
 .item__edit {
   padding: 5px;
   font-size: 1rem;

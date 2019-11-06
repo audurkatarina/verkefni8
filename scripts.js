@@ -34,13 +34,9 @@ const text = (() => {
 
     const { target } = e;
     const element = target.parentElement;
-    if(this.checked){
-      element.classList.add('item--done');
-    }
-    else{
-      element.classList.remove('item--done');
-    }
 
+    element.classList.toggle('item--done');
+    
   }
 
   // event handler fyrir það að breyta færslu
